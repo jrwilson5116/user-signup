@@ -2,20 +2,23 @@
 
 
 def valid_length(input):
+    for i in input:
+        if i == " ":
+            return False
     return (len(input) >= 3 and len(input)<=20)
 
 def match(password_1,password_2):
     return password_1 == password_2
 
 def valid_email(email):
+    if email == "":
+        return True
     if not valid_length(email):
         return False
     periods = 0
     at_symbols = 0
     for i in email:
-        if i == " ":
-            return False
-        elif i == ".":
+        if i == ".":
             periods += 1
         elif i == "@":
             at_symbols += 1

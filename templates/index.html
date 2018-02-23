@@ -3,11 +3,7 @@
 
 <html>
     <head>
-        <style>
-            .error {
-                color: red;
-            }
-        </style>
+
     </head>
     <body>
     <h1>Signup</h1>
@@ -16,28 +12,29 @@
                 <tr>
                     <td><label for="username">Username</label></td>
                     <td>
-                        <input name="username" type="text" value="">
+                        <input name="username" type="text" value="">{0}
                         <span class="error"></span>
                     </td>
+                 
                 </tr>
                 <tr>
                     <td><label for="password">Password</label></td>
                     <td>
-                        <input name="password" type="password">
+                        <input name="password" type="password">{1}
                         <span class="error"></span>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="verify">Verify Password</label></td>
                     <td>
-                        <input name="verify" type="password">
+                        <input name="verify" type="password">{2}
                         <span class="error"></span>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="email">Email (optional)</label></td>
                     <td>
-                        <input name="email" value="">
+                        <input name="email" value="">{3}
                         <span class="error"></span>
                     </td>
                 </tr>
