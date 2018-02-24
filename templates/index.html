@@ -3,7 +3,7 @@
 
 <html>
     <head>
-
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
     </head>
     <body>
     <h1>Signup</h1>
@@ -12,30 +12,30 @@
                 <tr>
                     <td><label for="username">Username</label></td>
                     <td>
-                        <input name="username" type="text" value="">{0}
-                        <span class="error"></span>
+                        <input name="username" type="text" value="">
+                        <span class="error">{0}</span>
                     </td>
                  
                 </tr>
                 <tr>
                     <td><label for="password">Password</label></td>
                     <td>
-                        <input name="password" type="password">{1}
-                        <span class="error"></span>
+                        <input name="password" type="password">
+                        <span class="error">{1}</span>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="verify">Verify Password</label></td>
                     <td>
-                        <input name="verify" type="password">{2}
-                        <span class="error"></span>
+                        <input name="verify" type="password">
+                        <span class="error">{2}</span>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="email">Email (optional)</label></td>
                     <td>
-                        <input name="email" value="">{3}
-                        <span class="error"></span>
+                        <input name="email" value="">
+                        <span class="error">{3}</span>
                     </td>
                 </tr>
             </table>
